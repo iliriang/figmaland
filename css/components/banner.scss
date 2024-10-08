@@ -1,0 +1,58 @@
+.banner_layout {
+  background: linear-gradient(230.95deg, #cb1ae8 -0.37%, #37bda6 100%);
+  margin-bottom: 51px;
+  padding-top: 140px;
+  .container {
+    .homepage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      .homepage_title {
+        padding: 45px 127px;
+      }
+      .homepage_buttons {
+        margin-bottom: 61px;
+        .getstarted {
+          color: black;
+          padding: 20px 36px;
+          margin-right: 13px;
+        }
+        .try {
+          padding: 20px 36px;
+          background-color: transparent;
+          border: 1px solid #fff;
+        }
+      }
+      .dashboard {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 523px) {
+  .banner_layout {
+    .container {
+      .homepage {
+        .homepage_title {
+          h1 {
+            font-size: 46px;
+            line-height: 57px;
+          }
+        }
+        .homepage_buttons {
+          display: flex;
+          flex-direction: column;
+          .getstarted {
+            padding: 20px 70px;
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.pricing {
+  margin-bottom: 51px;
+  .container {
+    .pricing_content {
+      .pricing_title {
+        text-align: center;
+        margin-bottom: 31px;
+      }
+      .pricing_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        .package {
+          padding: 40px;
+          border: 1px solid #dedede;
+          border-radius: 16px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .package_title {
+            text-align: center;
+          }
+          .package_img {
+            margin-bottom: 10px;
+          }
+          .package_price {
+            display: flex;
+
+            h1 {
+              font-weight: 900;
+              color: #30d7ba;
+            }
+            h4 {
+              color: #30d7ba;
+              margin: 0;
+
+              font-size: 30px;
+              font-weight: 700;
+              line-height: 33px;
+            }
+            p {
+              font-size: 12px;
+              font-weight: 600;
+              line-height: 18px;
+              text-align: left;
+            }
+          }
+          .package_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+              text-align: center;
+
+              li {
+                margin-bottom: 10px;
+              }
+            }
+          }
+          .package_btn {
+            .btn_order {
+              background: $secondary;
+              color: #fff;
+              padding: 20px 72px;
+              border-radius: 39px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing {
+    .container {
+      .pricing_content {
+        .pricing_title {
+          text-align: center;
+        }
+        .pricing_grid {
+          grid-template-columns: 1fr;
+          row-gap: 20px;
+        }
+        .package {
+          .package_price {
+            .row {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}

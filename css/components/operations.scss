@@ -1,0 +1,50 @@
+.operations {
+  // padding: 100px 20px;
+  margin-bottom: 51px;
+  .container {
+    .operations_content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .operations_content_picture {
+        .secondary_buttons {
+          display: none;
+        }
+      }
+      .operations_content_text {
+        padding: 120px 0px 120px 80px;
+        .operations_title {
+          margin-bottom: 36px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 523px) {
+  .operations {
+    margin-bottom: 51px;
+    .container {
+      .operations_content {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .operations_content_picture {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .operations_content_text {
+          padding: 0 64px 50px 64px;
+          button {
+            background: none;
+          }
+          .figmaland_btn {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

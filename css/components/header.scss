@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 100;
+  &.scrolled {
+    background: linear-gradient(230.95deg, #cb1ae8 -0.37%, #37bda6 100%);
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+  }
+  .container {
+    .header_items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 36px 26px;
+      .menu-items {
+        ul {
+          display: flex;
+          margin: 0;
+          li {
+            margin-right: 31px;
+          }
+          a {
+            color: white;
+          }
+        }
+      }
+      .account {
+        .signup {
+          padding: 20px 36px;
+          border-radius: 36px;
+          border: 1px solid #fff;
+          background-color: transparent;
+          color: white;
+        }
+      }
+      .hamburger {
+        display: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 523px) {
+  .header {
+    .container {
+      .header_items {
+        .menu-items {
+          display: none;
+          position: fixed;
+          top: 104px;
+          left: 0;
+          width: 100%;
+          background-color: #cb1ae8;
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+              margin: 20px;
+              a {
+                display: block;
+                padding: 10px 0;
+                text-align: center;
+                color: white;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .hamburger {
+          display: flex; /* Show hamburger menu on mobile */
+        }
+
+        /* Show the menu when the hamburger is active */
+        .menu-active {
+          display: flex; /* Flex will be used to show the menu when active */
+        }
+        .hamburger.active svg {
+          height: 3px;
+          background-color: white;
+          border-radius: 2px;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}

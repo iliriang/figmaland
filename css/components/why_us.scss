@@ -1,0 +1,56 @@
+.why_us {
+  .container {
+    .why_us_title {
+      text-align: center;
+    }
+    .why_us_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 31px;
+      margin-bottom: 50px;
+      padding: 88.5px 0;
+      .grid_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 50px;
+        border: 1px solid #dedede;
+        border-radius: 16px;
+        box-shadow: 0px 4px 31px 0px #00000026;
+
+        svg {
+          margin-bottom: 30px;
+        }
+        button {
+          border: none;
+          background: none;
+          color: #03d6f3;
+        }
+      }
+
+      .reverse {
+        color: white;
+        background: linear-gradient(230.95deg, #cb1ae8 -0.37%, #37bda6 100%);
+        button {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 523px) {
+  .why_us {
+    .container {
+      .why_us_grid {
+        grid-template-columns: 1fr;
+        row-gap: 64px;
+
+        padding: 35px 61px;
+        .grid_item {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

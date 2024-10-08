@@ -1,0 +1,57 @@
+.subscribe {
+  margin-bottom: 51px;
+  hr {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 51px;
+  }
+  padding: 62px 199px;
+  .container {
+    .subscribe_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .subscribe_content_text {
+        text-align: center;
+        margin-bottom: 59px;
+      }
+      .subscribe_content_form {
+        input {
+          padding: 20px 36px;
+          border: 1px solid #d0d0d0;
+          background-color: #efefef;
+          margin-right: 10px;
+          padding-left: 28px;
+          color: #5c5c5c;
+          font-weight: 700;
+          font-size: 15px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .subscribe {
+    .container {
+      .subscribe_content {
+        .subscribe_content_form {
+          form {
+            input {
+              margin-right: 0;
+
+              margin-bottom: 20px;
+              width: 100%;
+            }
+            button {
+              border-radius: 7px;
+              padding: 18px 184px;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

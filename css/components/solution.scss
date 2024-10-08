@@ -1,0 +1,72 @@
+.solution {
+  // padding: 64px 0;
+  margin-bottom: 51px;
+  .container {
+    .solution_content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      .solution_content_text {
+        padding: 43px 67px 43px 0px;
+        .solution_title {
+          margin-bottom: 36px;
+        }
+        .buttons {
+          .sign_up {
+            background-color: $secondary;
+            padding: 20px 36px;
+            border-radius: 39px;
+            box-shadow: 0px 4px 31px 0px #00000026;
+            margin-right: 22px;
+          }
+          .find_out {
+            background-color: #fff;
+            border-radius: 39px;
+            color: #30d7ba;
+            padding: 20px 36px;
+            box-shadow: 0px 4px 31px 0px #00000026;
+          }
+        }
+      }
+      .solution_content_img {
+        img {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 523px) {
+  .solution {
+    margin-bottom: 100px;
+    .container {
+      .solution_content {
+        display: flex;
+        flex-direction: column;
+
+        .solution_content_text {
+          padding: 0 44.5px;
+          text-align: center;
+          .buttons {
+            display: none;
+          }
+        }
+        .solution_content_img {
+          .secondary_buttons {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 59px 94.5px 0 94.5px;
+            button {
+              padding: 20px 75px;
+              text-wrap: nowrap;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

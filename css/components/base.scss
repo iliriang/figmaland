@@ -1,0 +1,106 @@
+* {
+  color: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: Poppins;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dotted #efefef;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 65.5px;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 57px;
+  margin: 0 0 20px 0;
+}
+
+h3 {
+  font-size: 50px;
+  line-height: 56px;
+  margin: 0 0 20px 0;
+}
+
+h4 {
+  font-size: 30px;
+  line-height: 33px;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px 0;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 20px 0;
+}
+
+button {
+  border-radius: 100px;
+  border: none;
+}
+
+span {
+  color: #2da884;
+}
+
+$secondary: #03d6f3;
+
+.figmaland_btn {
+  background-color: $secondary;
+  padding: 20px 36px;
+  border-radius: 39px;
+  box-shadow: 0px 4px 31px 0px #00000026;
+  margin-right: 22px;
+  color: white;
+}
+
+.sign_up {
+  background-color: $secondary;
+  padding: 20px 36px;
+  border-radius: 39px;
+  box-shadow: 0px 4px 31px 0px #00000026;
+  margin-right: 22px;
+  color: white;
+}
+
+.find_out {
+  background-color: #fff;
+  border-radius: 39px;
+  color: #30d7ba;
+  padding: 20px 36px;
+  box-shadow: 0px 4px 31px 0px #00000026;
+}
